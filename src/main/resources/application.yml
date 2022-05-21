@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/example
+    password: 0075336
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+general:
+  public:
+    key: classpath:app.pub
+  private:
+    key: classpath:app.key
+  expiration:
+    time: 18_000_000
